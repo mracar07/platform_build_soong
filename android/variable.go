@@ -133,6 +133,11 @@ type variableProperties struct {
 			Cflags []string
 		}
 
+		Uses_qti_camera_device struct {
+			Cppflags []string
+			Shared_libs []string
+		}
+
 	} `android:"arch_variant"`
 }
 
@@ -300,6 +305,8 @@ type productVariables struct {
 	Target_shim_libs *string `json:",omitempty"`
 
 	Bootloader_message_offset  *int `json:",omitempty"`
+
+	Uses_qti_camera_device  *bool `json:",omitempty"`
 
 }
 
