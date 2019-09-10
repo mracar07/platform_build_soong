@@ -134,6 +134,10 @@ type variableProperties struct {
 			Exclude_srcs []string `android:"arch_variant"`
 		} `android:"arch_variant"`
 
+		Target_init_vendor_lib struct {
+			Whole_static_libs []string
+		}
+
 		// include AOSAP variables
 		Aosap android.Product_variables
 	} `android:"arch_variant"`
