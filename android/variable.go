@@ -138,6 +138,10 @@ type variableProperties struct {
 			Shared_libs []string
 		}
 
+		Supports_extended_compress_format struct {
+			Cflags []string
+		}
+
 	} `android:"arch_variant"`
 }
 
@@ -307,6 +311,8 @@ type productVariables struct {
 	Bootloader_message_offset  *int `json:",omitempty"`
 
 	Uses_qti_camera_device  *bool `json:",omitempty"`
+
+	Supports_extended_compress_format  *bool `json:",omitempty"`
 
 }
 
